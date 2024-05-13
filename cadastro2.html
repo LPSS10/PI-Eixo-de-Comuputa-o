@@ -1,7 +1,7 @@
 <!doctype html>
  <html lang="pt-br">
 	<head>
-		<title> Cadastro - Estágio UNIVESP</title>
+		<title> Cadastro Empresas - Estágio UNIVESP</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/estilo.css" /> <!--Referencia da pasta do CSS-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--Para compatibilidade de navegadores-->
@@ -61,19 +61,21 @@
 
 <div id="area-principal">
       <div id="postagem">
-    <div class="img_osasco" class="container"> 
+       <div class="img_osasco" class="container"> 
           <img src="imagem/img1logo.jpg" class="img-fluid" alt="Imagem responsiva"> <br>
-        </div>
-               
-<h1 align="center"> Cadastro de candidato</h1>
-        
-    
+      
+       </div>
+      
+   
+<h1 align="center">Cadastrar vaga de estágio</h1>
+
 
 
 <div class="container">
+<br>
 
 
-<p align="center"> <b> Para se cadastrar preencha os dados abaixo: </b> </p>
+<p align="center"> <b> Para cadastrar sua vaga preencha os dados abaixo: </b> </p>
 
 
   <form method="post" action=""> 
@@ -83,6 +85,21 @@
             <label for="">Seu nome:</label>
             <input id="" name="nome_cad" required="required" type="text" placeholder="Digite o seu nome aqui!" />
           </p>
+             <p> 
+            <label for="">Nome da empresa:</label>
+            <input id="" name="nomeEmpresa_cad" required="required" type="text" placeholder="Digite o seu nome da empresa aqui!" />
+          </p>
+
+           <p> 
+            <label for="">Celular/Whatzapp para contato:</label>
+            <input id="" name="telefone1_cad" required="required" type="text" placeholder="Digite um número para contato aqui!" />
+          </p>
+
+    <p> 
+            <label for="">Telefone fixo para contato:</label>
+            <input id="" name="telefone2_cad" required="required" type="text" placeholder="Digite um número para contato aqui!" />
+          </p>
+
            
           <p> 
             <label for="email_cad">Seu e-mail:</label>
@@ -90,33 +107,72 @@
           </p>
            
           <p> 
-            <label for="senha_cad">Sua senha:</label>
-            <input id="" name="senha_cad" required="required" type="password" placeholder="Exemplo_de_senha_@2024!"/>
+
+            <label for="senha_cad">Nome da vaga:</label>
+            <input id="" name="nomeVaga_cad" required="required" type="text" placeholder="Exemplo: Estágio em TI"/>
           </p>	
 
-          <p> 
-            <label for="senha_cad">Confirme a sua senha:</label>
-            <input id="" name="senha_cad" required="required" type="password" placeholder="Digite_a_mesmas_senha_digitada_acima"/>
-          </p>	
+
+             <p> 
+            <label for="senha_cad">Cursos compatíveis com a vaga:</label>
+            <input id="" name="cursoComp_cad" required="required" type="text" placeholder="Exemplo: Tecnologia da Informação, Engenharia da Computação e Ciência de Dados."/>
+          </p>  
+
+               <p> 
+            <label for="senha_cad">Local de trabalho: </label>
+            <input id="" name="cursoComp_cad" required="required" type="text" placeholder="Ex: R. Cristóvão Colombo, N°369, bairro Bela Vista, cidade de Osasco-SP, CEP:08970-000."/>
+          </p>
+
+                   <p> 
+            <label for="senha_cad">Horário de trabalho:  </label>
+            <input id="" name="Hora_cad" required="required" type="text" placeholder="Exemplo: Manhã das 7 às 13 horas. "/>
+          </p>
+           <p> 
+            <label for="senha_cad">Valor da Bolsa:  </label>
+            <input id="" name="ValBol_cad" required="required" type="text" placeholder="Ex: R$: 10,80 por hora trabalhada.| ou | R$: 1.500,00 por mês. "/>
+          </p>
+	
+
+           <p> 
+            <label for="senha_cad">Valor do Auxilio transporte:  </label>
+            <input id="" name="ValTrans_cad" required="required" type="text" placeholder="Ex: R$: 8,80 por dia trabalhado. "/>
+          </p>
+
+
+           <p> 
+            <label for="senha_cad">Valor do Vale alimentação:  </label>
+            <input id="" name="ValAliment_cad" required="required" type="text" placeholder="Ex: R$: 9,00 por dia trabalhado. "/>
+          </p>
+
+
+
+  <p>
+    
+Descrição da vaga: <br> 
+  </p>
+
+
+<textarea name="descricaoVaga" rows="5" cols="77" spellcheck="true" >
+
+
+  </textarea>
+
+    <br> <br>
            
           <p align="center"> 
-	   		<a  href="msgCadastroDeAluno.html">
-			 Cadastrar!
-			</a>
+	 <a href="msgCadastroDeVaga.html">Cadastrar a vaga agora!</a>
   
           </p> 
-          <p>  
-            Já tem conta?	<br> <br>
-            <a href="login.html"> Ir para Login </a>	<br> <br>
-          </p>
+  	<br> <br>
+        
         </form>
+
 
 
 
  
 </div>   
-<div class="container">
- </div>
+
 </div>
 
 
